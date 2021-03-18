@@ -1,13 +1,16 @@
 #burgerstoeat {
     background-color: yellow;
-    float: left;
-    text-align: center;
-    padding: 10px;
+    /* float: left; */
+    
 }
 
 #burgerseaten {
     background-color: lightgreen;
-    float: right;
+    /* float: right; */
+}
+    
+
+.burgercard {
     text-align: center;
     padding: 10px;
 }
