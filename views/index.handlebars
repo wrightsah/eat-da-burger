@@ -1,2 +1,31 @@
 {{!-- This is the template that gets inserted into main.handlebars --}}
 
+<h1 class="text-center">Eat Da Burger</h1>
+<h2 class="text-center">🍔</h2>
+    <div class="container">
+        {{!--
+        <!-- {{!Left div that contains burgers submitted from form }} --> --}}
+        <div id="burgerstoeat">Burgers to Eat
+
+        </div>
+        {{!--
+        <!-- {{!Right div that conatins burgers that were eaten }} --> --}}
+        <div id="burgerseaten">Burgers Eaten</div>
+        {{!--
+        <!-- {{!Center div that contains a form with submit button }} --> --}}
+        <br>
+        <div>
+            <form>
+                <div class="form-group">
+                    <label for="submitBurger" class="text-center">Create a Burger!</label>
+                    <input type="textarea" class="form-control" id="burgerInput"
+                        placeholder="Enter your burger if you dare!" />
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+

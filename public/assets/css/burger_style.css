@@ -1,0 +1,11 @@
+#burgerstoeat {
+    background-color: lightyellow;
+    float: left;
+    text-align: center;
+}
+
+#burgerseaten {
+    background-color: lightgreen;
+    float: right;
+    text-align: center;
+}
