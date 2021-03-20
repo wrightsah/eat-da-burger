@@ -6,14 +6,14 @@
     <div class="row">
         {{!--
         <!-- {{!Left div that contains burgers submitted from form }} --> --}}
-        <div class="col-md-3">
+        <div class="col-md-4">
             <div id="burgerstoeat" class="card burgercard">
                 <div class="card-title">Burgers to Eat</div>
                 <div class="cardbody">
                     <ul class="list-group">
                         {{#each burgers}}
                         <li class="list-group-item">
-                            {{burger_name}}
+                            {{burger_name}} <button class="btn btn-primary">Devour</button>
                         </li>
                         {{/each}}
                     </ul>
@@ -24,7 +24,7 @@
         </div>
         {{!--
         <!-- {{!Center div that contains a form with submit button }} --> --}}
-        <div class="col-md-6">
+        <div class="col-md-4">
             <div>
                 <form>
                     <div class="form-group">
@@ -32,13 +32,13 @@
                         <input type="textarea" class="form-control" id="burgerInput"
                             placeholder="Enter your burger if you dare!" />
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
         {{!--
         <!-- {{!Right div that conatins burgers that were eaten }} --> --}}
-        <div class="col-md-3">
+        <div class="col-md-4">
             <div id="burgerseaten" class="card burgercard">
                 <div class="cardbody">
                     <div class="card-title">Burgers Eaten</div> Sample Text
