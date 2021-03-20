@@ -1,7 +1,7 @@
 {{!-- This is the template that gets inserted into main.handlebars --}}
 
 <h1 class="text-center">Eat Da Burger</h1>
-<h2 class="text-center" >🍔</h2>
+<h2 class="text-center">🍔</h2>
 <div class="container">
     <div class="row">
         {{!--
@@ -40,8 +40,18 @@
         <!-- {{!Right div that conatins burgers that were eaten }} --> --}}
         <div class="col-md-4">
             <div id="burgerseaten" class="card burgercard">
+                <div class="card-title">Burgers Eaten</div>
                 <div class="cardbody">
-                    <div class="card-title">Burgers Eaten</div> Sample Text
+                    <ul class="list-group">
+                        {{#each burgers}}
+                        {{#if devoured}}
+                        <li class="list-group-item">
+                            {{burger_name}}
+                        </li>
+                        {{/if}}
+                        {{/each}}
+                    </ul>
+                    
                 </div>
             </div>
         </div>
